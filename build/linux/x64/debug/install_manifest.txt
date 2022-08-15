@@ -1,0 +1,10 @@
+/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/build/linux/x64/debug/bundle/tragicomic
+/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/build/linux/x64/debug/bundle/data/icudtl.dat
+/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/build/linux/x64/debug/bundle/data/flutter_assets/version.json
+/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.json
+/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
+/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin
+/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/build/linux/x64/debug/bundle/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
