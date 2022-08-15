@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tragicomic/src/auth/components/inicial_screen.dart';
+import 'package:tragicomic/inicial_screen.dart';
 import 'package:tragicomic/src/auth/sign_up_screen.dart';
 
 import 'src/auth/sign_in_screen.dart';
