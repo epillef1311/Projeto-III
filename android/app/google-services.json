@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "1054048991906",
+    "project_id": "tragicomic-bd876",
+    "storage_bucket": "tragicomic-bd876.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054048991906:android:38c17ed3d418824fee35fb",
+        "android_client_info": {
+          "package_name": "com.example.flutter_tragicomic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054048991906-uu5ltf6e1kofk45pb2pp2d8bqd699kkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXHcfXRApMc27x6GvaM4yA_OhvdnTkfM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054048991906-uu5ltf6e1kofk45pb2pp2d8bqd699kkr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1054048991906-qibll3g4os1ft2q2a8mhff6a7uov14j8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterTragicomic"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054048991906:android:f23d22cc8887a51fee35fb",
+        "android_client_info": {
+          "package_name": "com.example.tragicomic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054048991906-uu5ltf6e1kofk45pb2pp2d8bqd699kkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXHcfXRApMc27x6GvaM4yA_OhvdnTkfM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054048991906-uu5ltf6e1kofk45pb2pp2d8bqd699kkr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1054048991906-qibll3g4os1ft2q2a8mhff6a7uov14j8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterTragicomic"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
