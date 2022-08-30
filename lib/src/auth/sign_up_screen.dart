@@ -1,24 +1,16 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:tragicomic/src/auth/components/custom_text_field.dart';
-// ignore: depend_on_referenced_packages
-import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 
 class SignUpScreen extends StatefulWidget {
-  SignUpScreen({Key? key}) : super(key: key);
+  const SignUpScreen({Key? key}) : super(key: key);
 
   @override
   State<SignUpScreen> createState() => _SignUpScreenState();
 }
 
 class _SignUpScreenState extends State<SignUpScreen> {
-  //Máscara para TELEFONE
-  final phone = MaskTextInputFormatter(
-    mask: '(##)#####-####',
-    filter: {
-      '#': RegExp(r'[0-9]'),
-    },
-  );
+ 
 
   late final TextEditingController _name;
   late final TextEditingController _email;
@@ -86,43 +78,71 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           .stretch, // ESTICA TODOS OS CAMPOS AO MÁXIMO NA TELA
                       children: [
                         //Nome do USUÁRIO
-                        TextField(
-                          controller: _name,
-                          enableSuggestions: false,
-                          autocorrect: false,
-                          decoration: const InputDecoration(hintText: 'Nome'),
-                        ),
-                        //EMAIL user@email.com
-                        TextField(
-                            controller: _email,
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 15),
+                          child: TextField(
+                            controller: _name,
                             enableSuggestions: false,
                             autocorrect: false,
-                            keyboardType: TextInputType.emailAddress,
-                            decoration:
-                                const InputDecoration(hintText: 'Email')),
+                            decoration: const InputDecoration(hintText: 'Nome',
+                            isDense: true,
+                            icon: Icon(Icons.person_outline),),
+                          ),
+                        ),
+                        //EMAIL user@email.com
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 15),
+                          child: TextField(
+                              controller: _email,
+                              enableSuggestions: false,
+                              autocorrect: false,
+                              keyboardType: TextInputType.emailAddress,
+                              decoration:
+                                  const InputDecoration(hintText: 'Email',
+                                  isDense: true,
+                                  icon: Icon(Icons.email_outlined),
+                                ),
+                            ),
+                        ),
 
                         //SENHA ********
-                        TextField(
-                          controller: _password,
-                          obscureText: true,
-                          enableSuggestions: false,
-                          autocorrect: false,
-                          decoration: const InputDecoration(hintText: 'Senha'),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 15),
+                          child: TextField(
+                            controller: _password,
+                            obscureText: true,
+                            enableSuggestions: false,
+                            autocorrect: false,
+                            decoration: const InputDecoration(hintText: 'Senha',
+                            isDense: true,
+                            icon: Icon(Icons.lock_outline),
+                            ),
+                          ),
                         ),
+
+                        //Resolver <<<<<<<<<<<<<<<<<<<<<
                         const CustomTextField(
                           icon: Icons.lock,
                           label: 'Confirmar Senha',
                           isSecret: true,
                         ),
+
                         // TELEFONE (00) 00000-0000
-                        TextField(
-                          controller: _telefone,
-                          enableSuggestions: false,
-                          autocorrect: false,
-                          decoration:
-                              const InputDecoration(hintText: 'Telefone'),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 15),
+                          child: TextField(
+                            controller: _telefone,
+                            enableSuggestions: false,
+                            autocorrect: false,
+                            decoration:
+                                const InputDecoration(hintText: 'Telefone',
+                                isDense: true,
+                                icon: Icon(Icons.phone_outlined),
+                            ),
+                          ),
                         ),
 
+                        // CADASRTRAR
                         SizedBox(
                           height: 45,
                           child: ElevatedButton(

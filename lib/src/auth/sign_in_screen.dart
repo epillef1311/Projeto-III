@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:tragicomic/src/auth/components/custom_text_field.dart';
 
 class SignInScreen extends StatefulWidget {
   SignInScreen({Key? key}) : super(key: key);
@@ -86,21 +85,33 @@ class _SignInScreenState extends State<SignInScreen> {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     //Nome do usuário
-                    TextField(
-                      controller: _email,
-                      enableSuggestions: false,
-                      autocorrect: false,
-                      keyboardType: TextInputType.emailAddress,
-                      decoration: const InputDecoration(hintText: 'Email'),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 15),
+                      child: TextField(
+                        controller: _email,
+                        enableSuggestions: false,
+                        autocorrect: false,
+                        keyboardType: TextInputType.emailAddress,
+                        decoration: const InputDecoration(
+                          hintText: 'Email',
+                          isDense: true,
+                          icon: Icon(Icons.email_outlined),
+                          ),
+                      ),
                     ),
 
                     // Senha
-                    TextField(
-                      controller: _password,
-                      obscureText: true,
-                      enableSuggestions: false,
-                      autocorrect: false,
-                      decoration: const InputDecoration(hintText: 'Senha'),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 15),
+                      child: TextField(
+                        controller: _password,
+                        obscureText: true,
+                        enableSuggestions: false,
+                        autocorrect: false,
+                        decoration: const InputDecoration(hintText: 'Senha',
+                        isDense: true,
+                        icon: Icon(Icons.email_outlined),),
+                      ),
                     ),
 
                     // BOTÂO PARA ENTRAR
@@ -118,7 +129,7 @@ class _SignInScreenState extends State<SignInScreen> {
                               final UserCredential = await FirebaseAuth.instance
                                   .signInWithEmailAndPassword(
                                       email: email, password: password);
-                              print(UserCredential);
+                              //print(UserCredential);
                             } on FirebaseAuthException catch (e) {
                               if (e.code == 'user-not-found') {
                                 print('user not found');
