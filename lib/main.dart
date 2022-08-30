@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tragicomic/inicial_screen.dart';
+import 'package:tragicomic/loading.dart';
 import 'package:tragicomic/src/auth/sign_up_screen.dart';
+import 'package:tragicomic/src/home/creation.dart';
+import 'package:tragicomic/src/home/menu.dart';
+import 'package:tragicomic/src/auth/reset_password.dart';
 
 import 'src/auth/sign_in_screen.dart';
 
@@ -26,8 +29,10 @@ class TragiComic extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => SignInScreen(),
-          '/signUp': (context) => SignUpScreen(),
-          '/inicialScreen': (context) => const InicialScreen(),
+          '/signUp': (context) => const SignUpScreen(),
+          '/loading': (context) => const Loading(),
+          '/menupage':(context) =>  const MenuPage(),
+          '/NewCreation': (context) => const NewCreation(),
         });
   }
 }
