@@ -3,7 +3,7 @@ import 'package:tragicomic/loading.dart';
 import 'package:tragicomic/src/auth/sign_up_screen.dart';
 import 'package:tragicomic/src/home/creation.dart';
 import 'package:tragicomic/src/home/menu.dart';
-import 'package:tragicomic/src/auth/reset_password.dart';
+import 'package:tragicomic/src/home/results.dart';
 
 import 'src/auth/sign_in_screen.dart';
 
@@ -26,13 +26,14 @@ class TragiComic extends StatelessWidget {
         debugShowCheckedModeBanner: false,
 
         //Definindo rotas no APP
-        initialRoute: '/',
+        initialRoute: '/menupage',
         routes: {
           '/': (context) => SignInScreen(),
           '/signUp': (context) => const SignUpScreen(),
           '/loading': (context) => const Loading(),
           '/menupage':(context) =>  const MenuPage(),
-          '/NewCreation': (context) => const NewCreation(),
+          '/newcreation': (context) => const NewCreation(),
+          '/results': (context) => const Results(),
         });
   }
 }

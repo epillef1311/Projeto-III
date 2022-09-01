@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:tragicomic/src/auth/components/custom_text_field.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key}) : super(key: key);
@@ -50,16 +49,48 @@ class _SignUpScreenState extends State<SignUpScreen> {
             children: [
               Column(
                 children: [
-                  const Expanded(
-                    child: Center(
-                      child: Text(
-                        'Cadastro de Novo Usuário',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
+
+                  Expanded(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                      //LOGO
+                        Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: const [
+                            
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(0, 40, 20, 0),
+                              //LOGO ICON
+                              child: Icon(Icons.movie_filter_outlined, size: 30),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(top: 40),
+                              child: Text('Tragicomic',
+                              style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 25, 
+                                      fontWeight: FontWeight.bold,
+                                ),
+                              
+                              ),
+                            ),
+                            ],
+                          ),
+                       const Padding(
+                         padding: EdgeInsets.only(top: 40),
+                         child: Text(
+                          'Cadastro de Novo Usuário',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                         ),
+                       ),
+                      ],
                     ),
                   ),
 
@@ -121,10 +152,19 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         ),
 
                         //Resolver <<<<<<<<<<<<<<<<<<<<<
-                        const CustomTextField(
-                          icon: Icons.lock,
-                          label: 'Confirmar Senha',
-                          isSecret: true,
+                        //Confirmar SENHA ********
+                        const Padding(
+                          padding: EdgeInsets.only(bottom: 15),
+                          child: TextField(
+                            // controller: _password,
+                            obscureText: true,
+                            enableSuggestions: false,
+                            autocorrect: false,
+                            decoration: InputDecoration(hintText: 'Confirmar senha',
+                            isDense: true,
+                            icon: Icon(Icons.lock_outline),
+                            ),
+                          ),
                         ),
 
                         // TELEFONE (00) 00000-0000
@@ -148,7 +188,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                 shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(18),
+                                  borderRadius: BorderRadius.circular(30),
                                 ),
                               ),
                               onPressed: () async {

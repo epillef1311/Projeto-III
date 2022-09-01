@@ -52,10 +52,15 @@ class _SignInScreenState extends State<SignInScreen> {
                   child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
+                  Padding(
+                    padding: EdgeInsets.all(20),
+                    child: Icon(Icons.movie_filter_outlined,
+                    size: 40,),
+                  ),
                   //NOME DO APP
                   Text.rich(TextSpan(
                       style: TextStyle(
-                        fontSize: 40,
+                        fontSize: 30,
                       ),
                       children: [
                         TextSpan(
@@ -110,7 +115,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         autocorrect: false,
                         decoration: const InputDecoration(hintText: 'Senha',
                         isDense: true,
-                        icon: Icon(Icons.email_outlined),),
+                        icon: Icon(Icons.lock_outline),),
                       ),
                     ),
 
@@ -120,7 +125,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
                               shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(18),
+                            borderRadius: BorderRadius.circular(30),
                           )),
                           onPressed: () async {
                             final email = _email.text;
@@ -196,7 +201,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       child: OutlinedButton(
                         style: OutlinedButton.styleFrom(
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18),
+                              borderRadius: BorderRadius.circular(30),
                             ),
                             side: const BorderSide(
                               width: 2,

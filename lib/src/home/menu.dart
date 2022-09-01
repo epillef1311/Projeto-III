@@ -76,10 +76,12 @@ class MenuPage extends StatelessWidget {
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(20),
+
+                      //Nova Criação
                       child: Column(
                       children: [
                       IconButton(onPressed: () {
-                      Navigator.of(context).pushNamed('/');
+                      Navigator.of(context).pushNamed('/newcreation');
                   },
                   icon: const Icon(Icons.credit_score_sharp,
                   size: 40,
@@ -95,10 +97,12 @@ class MenuPage extends StatelessWidget {
                       ],
                    ),
                     ),
+                  
+                  //Tendências
                    Column(
                     children: [
                     IconButton(onPressed: () {
-                    Navigator.of(context).pushNamed('/NewCreation');
+                    Navigator.of(context).pushNamed('/');
                   },
                   icon: const Icon(Icons.trending_up_rounded,
                   size: 40,
@@ -118,6 +122,7 @@ class MenuPage extends StatelessWidget {
                 ),
               ),
 
+              //Meu perfil
               Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -142,6 +147,8 @@ class MenuPage extends StatelessWidget {
                 ],
                ),
               ),
+
+              //Minhas criações
                Column(
               children: [
               IconButton(onPressed: () {
