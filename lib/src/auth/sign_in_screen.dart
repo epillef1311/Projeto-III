@@ -54,8 +54,10 @@ class _SignInScreenState extends State<SignInScreen> {
                 children: const [
                   Padding(
                     padding: EdgeInsets.all(20),
-                    child: Icon(Icons.movie_filter_outlined,
-                    size: 40,),
+                    child: Icon(
+                      Icons.movie_filter_outlined,
+                      size: 40,
+                    ),
                   ),
                   //NOME DO APP
                   Text.rich(TextSpan(
@@ -101,7 +103,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           hintText: 'Email',
                           isDense: true,
                           icon: Icon(Icons.email_outlined),
-                          ),
+                        ),
                       ),
                     ),
 
@@ -113,9 +115,11 @@ class _SignInScreenState extends State<SignInScreen> {
                         obscureText: true,
                         enableSuggestions: false,
                         autocorrect: false,
-                        decoration: const InputDecoration(hintText: 'Senha',
-                        isDense: true,
-                        icon: Icon(Icons.lock_outline),),
+                        decoration: const InputDecoration(
+                          hintText: 'Senha',
+                          isDense: true,
+                          icon: Icon(Icons.lock_outline),
+                        ),
                       ),
                     ),
 
@@ -142,7 +146,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                 print('wrong password');
                               }
                             }
-                            Navigator.of(context).pushNamed('/inicialScreen');
+                            Navigator.of(context).pushNamed('/menupage');
                           },
                           child: const Text(
                             'Acessar',
