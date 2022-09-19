@@ -26,12 +26,12 @@ class TragiComic extends StatelessWidget {
         debugShowCheckedModeBanner: false,
 
         //Definindo rotas no APP
-        initialRoute: '/menupage',
+        initialRoute: '/loading',
         routes: {
           '/': (context) => SignInScreen(),
-          '/signUp': (context) => const SignUpScreen(),
+          '/signUp': (context) => SignUpScreen(),
           '/loading': (context) => const Loading(),
-          '/menupage':(context) =>  const MenuPage(),
+          '/menupage': (context) => const MenuPage(),
           '/newcreation': (context) => const NewCreation(),
           '/results': (context) => const Results(),
         });
