@@ -12,7 +12,7 @@ class _NewCreationState extends State<NewCreation> {
   final genres = ['Ação','Aventura', 'Comédia', 'Drama', 'Ficção', 'Horror', 'Musical', 'Romance'];
   final directors = ['diretor 1', 'diretor 2','diretor 3'];
   final actors =['ator A', 'ator B', 'atriz Y', 'atriz Z'];
-  final times = ['30', '60', '120', '180'];
+  final times = ['30', '60', '90', '120', '180'];
   String genre = 'Ação';
   String director = 'The best director';
   String actor = 'The greater actor';
@@ -129,42 +129,76 @@ class _NewCreationState extends State<NewCreation> {
                     //Diretor
                       Padding(
                         padding: const EdgeInsets.all(10),
-                        child: Row(
-                          children: const [
-                            Padding(
-                              padding: EdgeInsets.all(10),
-                              child: Icon(Icons.manage_accounts_rounded),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            const Padding(
+                              padding: EdgeInsets.only(bottom: 15),
+                              child: TextField(
+                            //controller: _title,
+                            enableSuggestions: false,
+                            autocorrect: false,
+                            decoration: InputDecoration(hintText: 'Diretor do projeto',
+                            isDense: true,
+                            icon: Icon(Icons.manage_accounts_rounded, size: 22,),),
+                              )
                             ),
-                            Text('Diretor(a):', style: TextStyle(fontSize: 18),),
                                   ],
                                 ),
                               ),
                       //Estrela Principal
                       Padding(
                         padding: const EdgeInsets.all(10),
-                        child: Row(
-                          children: const [
-                            Padding(
-                              padding: EdgeInsets.all(10),
-                              child: Icon(Icons.star_border_purple500),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            const Padding(
+                              padding: EdgeInsets.only(bottom: 15),
+                              child: TextField(
+                            //controller: _title,
+                            enableSuggestions: false,
+                            autocorrect: false,
+                            decoration: InputDecoration(hintText: 'Estrela principal do projeto',
+                            isDense: true,
+                            icon: Icon(Icons.star_border_purple500, size: 22,),),
+                              )
                             ),
-                            Text('Estrela principal:', style: TextStyle(fontSize: 18),),
                           ],
                         ),
                       ),
                       
                       //Duração
-                      Padding(
-                        padding: const EdgeInsets.all(10),
-                        child: Row(
-                          children: const [
-                            Padding(
-                              padding: EdgeInsets.all(10),
-                              child: Icon(Icons.timelapse_rounded),
-                            ),
-                            Text('Duração do filme:', style: TextStyle(fontSize: 18),),
-                          ],
-                        ),
+                      Row(
+                        children: [
+                          const Padding(
+                            padding: EdgeInsets.all(10),
+                            child: Icon(Icons.timelapse_rounded),
+                          ),
+                          const Text('Duração:', style: TextStyle(fontSize: 18)),
+                          Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: DropdownButton(
+                                // Initial Value
+                                value: time,
+                                // Down Arrow Icon
+                                icon: const Icon(Icons.keyboard_arrow_down),   
+                                // Array list of items
+                                items: times.map((String items) {
+                                  return DropdownMenuItem(
+                                    value: items,
+                                    child: Text(items),
+                                  );
+                                }).toList(),
+                                // After selecting the desired option,it will
+                                // change button value to selected value
+                                onChanged: (String? newValue) {
+                                  setState(() {
+                                    time = newValue!;
+                                  });
+                                },
+                              ),
+                          ),
+                        ],
                       ),
 
               // GERAR RESULTADOS
@@ -182,7 +216,7 @@ class _NewCreationState extends State<NewCreation> {
                                   Navigator.of(context).pushNamed('/results');
                                 },
 
-                                child: const Text('Gerar resultados',
+                                child: const Text('Salvar resultados',
                                     style: TextStyle(
                                       fontSize: 18,))),
                           ),
