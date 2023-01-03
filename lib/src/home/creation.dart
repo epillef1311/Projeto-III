@@ -10,18 +10,7 @@ class NewCreation extends StatefulWidget {
 }
 
 class _NewCreationState extends State<NewCreation> {
-  final genres = [
-    'Ação',
-    'Aventura',
-    'Comédia',
-    'Drama',
-    'Ficção',
-    'Horror',
-    'Musical',
-    'Romance'
-  ];
-  final directors = ['diretor 1', 'diretor 2', 'diretor 3'];
-  final actors = ['ator A', 'ator B', 'atriz Y', 'atriz Z'];
+
   final times = ['30', '60', '90', '120', '180'];
   String genre = 'Ação';
   String director = 'The best director';
@@ -163,75 +152,7 @@ class _NewCreationState extends State<NewCreation> {
                                   });
                                 },
                               ),
-                            ),
-                          ],
-                        ),
-                        //Diretor
-                        Padding(
-                          padding: const EdgeInsets.all(10),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            // ignore: prefer_const_literals_to_create_immutables
-                            children: [
-                              Padding(
-                                  padding: EdgeInsets.only(bottom: 15),
-                                  child: TextFormField(
-                                    controller: _director,
-                                    enableSuggestions: false,
-                                    autocorrect: false,
-                                    decoration: InputDecoration(
-                                      hintText: 'Diretor do projeto',
-                                      isDense: true,
-                                      icon: Icon(
-                                        Icons.manage_accounts_rounded,
-                                        size: 22,
-                                      ),
-                                    ),
-                                  )),
-                            ],
-                          ),
-                        ),
-                        //Estrela Principal
-                        Padding(
-                          padding: EdgeInsets.all(10),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              Padding(
-                                  padding: EdgeInsets.only(bottom: 15),
-                                  child: TextFormField(
-                                    controller: _actor,
-                                    enableSuggestions: false,
-                                    autocorrect: false,
-                                    decoration: InputDecoration(
-                                      hintText: 'Estrela principal do projeto',
-                                      isDense: true,
-                                      icon: Icon(
-                                        Icons.star_border_purple500,
-                                        size: 22,
-                                      ),
-                                    ),
-                                  )),
-                            ],
-                          ),
-                        ),
 
-                        //Duração
-                        Row(
-                          children: [
-                            const Padding(
-                              padding: EdgeInsets.all(10),
-                              child: Icon(Icons.timelapse_rounded),
-                            ),
-                            const Text('Duração:',
-                                style: TextStyle(fontSize: 18)),
-                            Padding(
-                              padding: const EdgeInsets.all(10),
-                              child: DropdownButton(
-                                // Initial Value
-                                value: time,
-                                // Down Arrow Icon
-                                icon: const Icon(Icons.keyboard_arrow_down),
                                 // Array list of items
                                 items: times.map((String items) {
                                   return DropdownMenuItem(
@@ -247,9 +168,7 @@ class _NewCreationState extends State<NewCreation> {
                                   });
                                 },
                               ),
-                            ),
-                          ],
-                        ),
+
 
                         // GERAR RESULTADOS
                         Padding(
@@ -267,22 +186,6 @@ class _NewCreationState extends State<NewCreation> {
                                   final director = _director.text;
                                   final actor = _actor.text;
 
-                                  final criacao = await FirebaseFirestore
-                                      .instance
-                                      .collection('criacao')
-                                      .doc(uid)
-                                      .collection('criacoes')
-                                      .doc(title)
-                                      .set({
-                                    'Titulo': title,
-                                    'Genero': genre,
-                                    'Diretor': director,
-                                    'Ator principal': actor,
-                                    'Duração': time,
-                                  });
-
-                                  Navigator.of(context).pushNamed('/menupage');
-                                },
                                 child: const Text('Salvar resultados',
                                     style: TextStyle(
                                       fontSize: 18,
