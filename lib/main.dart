@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tragicomic/loading.dart';
+import 'package:tragicomic/mycreation.dart';
+import 'package:tragicomic/profile.dart';
 import 'package:tragicomic/src/auth/sign_up_screen.dart';
 import 'package:tragicomic/src/home/creation.dart';
 import 'package:tragicomic/src/home/menu.dart';
@@ -34,6 +36,8 @@ class TragiComic extends StatelessWidget {
           '/menupage': (context) => const MenuPage(),
           '/newcreation': (context) => const NewCreation(),
           '/results': (context) => const Results(),
+          '/profile': (context) => const Profile(),
+          '/myCreation': (context) => const MyCreation(),
         });
   }
 }

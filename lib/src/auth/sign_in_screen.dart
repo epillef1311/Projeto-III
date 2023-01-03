@@ -138,6 +138,7 @@ class _SignInScreenState extends State<SignInScreen> {
                               final UserCredential = await FirebaseAuth.instance
                                   .signInWithEmailAndPassword(
                                       email: email, password: password);
+                              Navigator.of(context).pushNamed('/menupage');
                               //print(UserCredential);
                             } on FirebaseAuthException catch (e) {
                               if (e.code == 'user-not-found') {
@@ -146,7 +147,6 @@ class _SignInScreenState extends State<SignInScreen> {
                                 print('wrong password');
                               }
                             }
-                            Navigator.of(context).pushNamed('/menupage');
                           },
                           child: const Text(
                             'Acessar',
