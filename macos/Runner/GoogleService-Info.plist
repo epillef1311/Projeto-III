@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1054048991906-m58itiqtvc9nes3se9e158sc7abko4l9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1054048991906-m58itiqtvc9nes3se9e158sc7abko4l9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCGCAXGxDfnUNYGqm_0n6GgddUuBHCQWVY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1054048991906</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.tragicomic</string>
+	<key>PROJECT_ID</key>
+	<string>tragicomic-bd876</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tragicomic-bd876.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1054048991906:ios:3690559e6a3a7a08ee35fb</string>
+</dict>
+</plist>

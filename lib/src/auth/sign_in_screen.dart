@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:tragicomic/src/auth/components/custom_text_field.dart';
 
 class SignInScreen extends StatefulWidget {
   SignInScreen({Key? key}) : super(key: key);
@@ -53,10 +52,17 @@ class _SignInScreenState extends State<SignInScreen> {
                   child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
+                  Padding(
+                    padding: EdgeInsets.all(20),
+                    child: Icon(
+                      Icons.movie_filter_outlined,
+                      size: 40,
+                    ),
+                  ),
                   //NOME DO APP
                   Text.rich(TextSpan(
                       style: TextStyle(
-                        fontSize: 40,
+                        fontSize: 30,
                       ),
                       children: [
                         TextSpan(
@@ -86,21 +92,35 @@ class _SignInScreenState extends State<SignInScreen> {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     //Nome do usuário
-                    TextField(
-                      controller: _email,
-                      enableSuggestions: false,
-                      autocorrect: false,
-                      keyboardType: TextInputType.emailAddress,
-                      decoration: const InputDecoration(hintText: 'Email'),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 15),
+                      child: TextField(
+                        controller: _email,
+                        enableSuggestions: false,
+                        autocorrect: false,
+                        keyboardType: TextInputType.emailAddress,
+                        decoration: const InputDecoration(
+                          hintText: 'Email',
+                          isDense: true,
+                          icon: Icon(Icons.email_outlined),
+                        ),
+                      ),
                     ),
 
                     // Senha
-                    TextField(
-                      controller: _password,
-                      obscureText: true,
-                      enableSuggestions: false,
-                      autocorrect: false,
-                      decoration: const InputDecoration(hintText: 'Senha'),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 15),
+                      child: TextField(
+                        controller: _password,
+                        obscureText: true,
+                        enableSuggestions: false,
+                        autocorrect: false,
+                        decoration: const InputDecoration(
+                          hintText: 'Senha',
+                          isDense: true,
+                          icon: Icon(Icons.lock_outline),
+                        ),
+                      ),
                     ),
 
                     // BOTÂO PARA ENTRAR
@@ -109,7 +129,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
                               shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(18),
+                            borderRadius: BorderRadius.circular(30),
                           )),
                           onPressed: () async {
                             final email = _email.text;
@@ -118,7 +138,8 @@ class _SignInScreenState extends State<SignInScreen> {
                               final UserCredential = await FirebaseAuth.instance
                                   .signInWithEmailAndPassword(
                                       email: email, password: password);
-                              print(UserCredential);
+                              Navigator.of(context).pushNamed('/menupage');
+                              //print(UserCredential);
                             } on FirebaseAuthException catch (e) {
                               if (e.code == 'user-not-found') {
                                 print('user not found');
@@ -126,7 +147,6 @@ class _SignInScreenState extends State<SignInScreen> {
                                 print('wrong password');
                               }
                             }
-                            Navigator.of(context).pushNamed('/inicialScreen');
                           },
                           child: const Text(
                             'Acessar',
@@ -185,7 +205,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       child: OutlinedButton(
                         style: OutlinedButton.styleFrom(
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18),
+                              borderRadius: BorderRadius.circular(30),
                             ),
                             side: const BorderSide(
                               width: 2,
