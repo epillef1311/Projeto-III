@@ -1,0 +1,78 @@
+# ninja log v5
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	72795f68c55b8be0
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	72795f68c55b8be0
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_value.h	72795f68c55b8be0
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	72795f68c55b8be0
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_engine.h	72795f68c55b8be0
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	72795f68c55b8be0
+16874	18225	1660587898	CMakeFiles/tragicomic.dir/my_application.cc.o	b4602f685c670bce
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	72795f68c55b8be0
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	72795f68c55b8be0
+18225	18938	1660587898	intermediates_do_not_run/tragicomic	ca4134609d7a687
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	72795f68c55b8be0
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	72795f68c55b8be0
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	72795f68c55b8be0
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	72795f68c55b8be0
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_view.h	72795f68c55b8be0
+16875	17894	1660587897	CMakeFiles/tragicomic.dir/flutter/generated_plugin_registrant.cc.o	d650e2a035fdcc9
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	72795f68c55b8be0
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	72795f68c55b8be0
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	72795f68c55b8be0
+39619	50534	1659808733	CMakeFiles/tragicomic.dir/main.cc.o	e7cc65983ad75803
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/libflutter_linux_gtk.so	72795f68c55b8be0
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	72795f68c55b8be0
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	72795f68c55b8be0
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	72795f68c55b8be0
+3	16832	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/libflutter_linux_gtk.so	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_engine.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_value.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_view.h	72795f68c55b8be0
+4	15605	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	72795f68c55b8be0
+4	15605	0	flutter/_phony_	72795f68c55b8be0
+15606	16510	1660588355	CMakeFiles/tragicomic.dir/flutter/generated_plugin_registrant.cc.o	d650e2a035fdcc9
+15605	16889	1660588355	CMakeFiles/tragicomic.dir/my_application.cc.o	b4602f685c670bce
+16890	17360	1660588355	intermediates_do_not_run/tragicomic	ca4134609d7a687
+17360	17887	0	CMakeFiles/install.util	99d680d709058a3a
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/libflutter_linux_gtk.so	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_engine.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_value.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/fl_view.h	72795f68c55b8be0
+169	22570	0	/home/rafaelwhesley/Área de Trabalho/g7/tragicomic/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	72795f68c55b8be0
+169	22570	0	flutter/_phony_	72795f68c55b8be0
+22641	28351	1660589894	CMakeFiles/tragicomic.dir/flutter/generated_plugin_registrant.cc.o	d650e2a035fdcc9
+22611	28372	1660589894	CMakeFiles/tragicomic.dir/my_application.cc.o	b4602f685c670bce
+28373	29662	1660589896	intermediates_do_not_run/tragicomic	ca4134609d7a687
+29662	32769	0	CMakeFiles/install.util	99d680d709058a3a
